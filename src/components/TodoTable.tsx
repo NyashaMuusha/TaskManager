@@ -39,11 +39,9 @@ const TodoTable: React.FC<TodoTableProps> = ({
                 />
               </td>
               <td className="text-left">{`TASK-${todo.id}`}</td>
-              <td
-                className={` text-left${todo.completed ? 'line-through' : ''}`}
-              >
-                {todo.title}
-              </td>
+             <td className={`text-left ${todo.completed ? 'line-through' : ''}`}>
+              {todo.title}
+            </td>
               <td className="text-center">
                 <FontAwesomeIcon
                   className="text-gray-400 px-2 py-1 rounded-sm hover-bg-gray-200"
